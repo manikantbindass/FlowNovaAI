@@ -4,7 +4,7 @@ COPY pom.xml ./
 COPY src ./src
 RUN mvn -B -ntp package -DskipTests
 FROM eclipse-temurin:21-jre-alpine
-RUN addgroup -S flownova && adduser -S -G flownova flownova
+RUN apk upgrade --no-cache && addgroup -S flownova && adduser -S -G flownova flownova
 WORKDIR /app
 COPY --from=build /build/target/api-0.0.1-SNAPSHOT.jar /app/api.jar
 RUN chown -R flownova:flownova /app
