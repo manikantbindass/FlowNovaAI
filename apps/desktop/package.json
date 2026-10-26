@@ -25,7 +25,7 @@
       "icon": "build/icon.ico",
       "target": [{ "target": "portable", "arch": ["x64"] }],
       "artifactName": "FlowNova-AI-${version}-windows-${arch}.${ext}",
-      "signAndEditExecutable": false
+      "signExecutable": false
     },
     "portable": { "requestExecutionLevel": "user" }
   }

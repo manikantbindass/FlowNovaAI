@@ -24,6 +24,8 @@ jobs:
       - run: npm run dist --prefix apps/desktop
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Test packaged desktop client
+        run: node scripts/desktop-smoke.mjs
       - name: Compute checksum
         shell: pwsh
         run: |

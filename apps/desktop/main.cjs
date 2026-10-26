@@ -54,7 +54,11 @@ function createWindow() {
     if (isRepositoryUrl(url)) void shell.openExternal(url);
     return { action: 'deny' };
   });
-  let attached = false;
+  // Attach before loading: a detached native view can defer renderer startup.
+  window.contentView.addChildView(view);
+  view.setBackgroundColor('#080b16');
+  resize();
+  let attached = true;
   view.webContents.on('did-finish-load', () => {
     if (!isAppUrl(view.webContents.getURL())) return;
     if (!attached) { window.contentView.addChildView(view); attached = true; }

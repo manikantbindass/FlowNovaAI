@@ -20,7 +20,7 @@ npm run dist --prefix apps/desktop
 
 The artifact is `apps/desktop/dist/FlowNova-AI-0.1.0-windows-x64.exe`. Build output and dependencies are excluded from Git. The pinned desktop dependencies have their own lockfile and do not change the web application workspace. The Windows desktop GitHub Actions workflow builds a downloadable artifact; publishing an official release remains a separate action.
 
-After root `npm ci`, `node scripts/desktop-smoke.mjs` checks the unpacked executable against the hosted service: rendering, sandbox preferences, absence of renderer Node APIs, public sign-in, and workspace access. Set `DESKTOP_EXE` to test another executable path. The main web suite separately checks authoring, publishing and real execution.
+`node scripts/desktop-smoke.mjs` checks the unpacked executable against the hosted service: rendering, sandbox preferences, absence of renderer Node APIs, public sign-in, and workspace access. Set `DESKTOP_EXE` to test another executable path. The main web suite separately checks authoring, publishing and real execution.
 
 ## Desktop boundaries
 
