@@ -1,0 +1,8 @@
+{
+  "rootDirectory": "apps/web",
+  "framework": "nextjs",
+  "nodeVersion": "24.x",
+  "installCommand": "cd ../.. && npm ci",
+  "buildCommand": "npm run build",
+  "sourceFilesOutsideRootDirectory": true
+}
