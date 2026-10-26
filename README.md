@@ -13,6 +13,11 @@ A visual workflow workbench with two runtimes: a Vercel-native hosted demo, and 
 
 **Live app:** [flownova-ai.vercel.app](https://flownova-ai.vercel.app) · [Sign in](https://flownova-ai.vercel.app/login) · [Runtime choices](https://flownova-ai.vercel.app/setup). The hosted demo includes sessions, private persistence, and real execution on Vercel Workflows.
 
+## Windows desktop download
+
+[Download FlowNova AI for Windows (.exe)](https://github.com/manikantbindass/FlowNovaAI/releases/latest) · [Build and desktop documentation](docs/DESKTOP.md)
+
+The portable x64 desktop client opens the live Vercel workspace without installing Java or Node.js. Internet access is required. Sign in with **demo / demo**; desktop and browser sessions have separate demo data. The executable is unsigned; its release includes a SHA-256 checksum.
 ## Demo login
 
 Use the hosted demo or local backend, then sign in with:

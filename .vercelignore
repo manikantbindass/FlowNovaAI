@@ -8,6 +8,7 @@ node_modules
 .tools
 .git
 apps/api
+apps/desktop
 docs
 scripts
 **/.env*
